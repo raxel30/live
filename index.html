@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Sports Streaming</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+    url('https://s.yimg.com/lo/mysterio/api/c7fbbe8df74991a535e06385e5ea9c4cdf901201a704fe0c3f864276e28fd5ad/lightyear_networkapi/resizefill_w760_h428%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthe_sporting_news_articles_584%2F3728cbbb0f37298d323ce7fa9ad7f83d');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* 🔝 TOP BANNER */
+.top-banner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🔻 BOTTOM BANNER */
+.bottom-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding-top: 90px;
+    padding-bottom: 90px; /* biar gak ketutup bottom banner */
+}
+
+.live-badge {
+    background: red;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+.player-box {
+    position: relative;
+    width: 90%;
+    max-width: 650px;
+    margin: 20px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(255,0,0,0.6);
+    cursor: pointer;
+}
+
+.player-box img {
+    width: 100%;
+}
+
+.player-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    top: 0;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    background: rgba(0,0,0,0.6);
+    padding: 20px 30px;
+    border-radius: 50%;
+    animation: glow 1s infinite;
+}
+
+@keyframes glow {
+    0% {box-shadow: 0 0 10px red;}
+    50% {box-shadow: 0 0 25px red;}
+    100% {box-shadow: 0 0 10px red;}
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 16px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ff0000, #ff9900);
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(255,0,0,0.8);
+    animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.07);}
+  100% {transform: scale(1);}
+}
+
+.desc {
+    margin: 15px;
+    color: #ddd;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🔝 TOP BANNER -->
+<div class="top-banner">
+<script>
+  atOptions = {
+    'key' : '3c7ee59bb35cc5000e27eef25f1f079f',
+    'format' : 'iframe',
+    'height' : 60,
+    'width' : 468,
+    'params' : {}
+  };
+</script>
+<script src="https://czernik.org/22/3c7ee59bb35cc5000e27eef25f1f079f"></script>
+</div>
+
+<div class="container">
+
+<div class="live-badge">🔴 LIVE NOW</div>
+
+<h1>Watch Live HD</h1>
+
+<a href="https://multi-media.trk2afse.com/click?pid=99&offer_id=10&sub1=PRIMA">
+    <div class="player-box">
+        <img src="https://i.ytimg.com/vi/4MAI-nd1_Nc/sddefault.jpg">
+        <div class="player-overlay"></div>
+        <div class="play-btn">▶</div>
+    </div>
+</a>
+
+<p class="desc">Full HD Streaming • No Buffer • All Available</p>
+
+<a href="https://multi-media.trk2afse.com/click?pid=99&offer_id=10&sub1=PRIMA" class="cta-btn">
+▶️ WATCH LIVE NOW
+</a>
+
+</div>
+
+<!-- 🔻 BOTTOM BANNER -->
+<div class="bottom-banner">
+
+</div>
+
+<!-- 📊 HISTATS -->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4977232,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4977232&101" alt="website statistics" border="0"></a></noscript>
+
+</body>
+</html>
